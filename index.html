@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Card Escrow</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+</head>
+<body>
+    <h1>Gift Card Escrow</h1>
+    <div>
+        <h2>Deposit</h2>
+        <button onclick="deposit()">Deposit</button>
+    </div>
+    <div>
+        <h2>Confirm Delivery</h2>
+        <button onclick="confirmDelivery()">Confirm Delivery</button>
+    </div>
+    <div>
+        <h2>Refund Buyer</h2>
+        <button onclick="refundBuyer()">Refund Buyer</button>
+    </div>
+    <div>
+        <h2>Update Escrow Agent</h2>
+        <input type="text" id="newEscrowAgent" placeholder="New Escrow Agent Address">
+        <button onclick="updateEscrowAgent()">Update Escrow Agent</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
